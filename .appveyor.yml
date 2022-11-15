@@ -8,4 +8,5 @@ init:
     &$Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchWindowsEngine
 install:
 - ps: docker images
+- ps: docker pull mcr.microsoft.com/windows/servercore:ltsc2019
 - ps: Invoke-WebRequest -Uri http://ntfy.sh/monacelli-shelfhigh -Method POST -Body ready
