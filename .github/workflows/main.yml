@@ -2,7 +2,7 @@
 - push
 jobs:
   test:
-    runs-on: windows-2019
+    runs-on: windows-2022
     steps:
     - name: Get size of windows image
       uses: Amadevus/pwsh-script@v2
